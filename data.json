@@ -1,20 +1,13 @@
 {
   "instructors": [
     {
-      "avatar_url": "http://bla.com",
-      "name": "Fernando Kira",
-      "birth": "1993-08-07",
-      "gender": "M",
-      "services": "Natação, Musculação",
-      "created_at": 1611346020922
-    },
-    {
-      "avatar_url": "http://Nangiro.com",
-      "name": "Nangiro",
+      "id": 1,
+      "name": "Baby Yoda",
+      "avatar_url": "https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-28-11-38/baby-yoda-ja-tem-nome-oficial-1606563497202.jpg/EG11/resize/1200x-1/baby-yoda-ja-tem-nome-oficial-1606563497202.jpg",
       "birth": 744681600000,
       "gender": "M",
-      "services": "Natação, Musculação",
-      "created_at": 1611346173569
+      "services": "Force, Light Saber",
+      "created_at": 1611600380544
     }
   ]
 }
