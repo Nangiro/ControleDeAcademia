@@ -8,6 +8,15 @@
       "gender": "M",
       "services": "Force, Light Saber",
       "created_at": 1611600380544
+    },
+    {
+      "id": 2,
+      "name": "Teste F",
+      "avatar_url": "http://bla.com",
+      "birth": 725846400000,
+      "gender": "F",
+      "services": "Teste1, Teste2",
+      "created_at": 1611608191513
     }
   ]
 }
