@@ -83,5 +83,52 @@ exports.edit = function(req,res){
     return res.render('instructors/edit', { instructor })
 }
 
-//delete
+//put
+exports.put = function(req,res) {
 
+    const { id } = req.body
+    let index = 0
+
+    const foundInstructor = data.instructors.find(function(instructor, foundIndex) {
+        if (id == instructor.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foundInstructor) {
+        return res.send("Instructor not found !!!")
+    }
+
+    const instructor = {
+        ...foundInstructor, //Trazendo do banco de dados
+        ...req.body, //Trazendo do front
+        birth: Date.parse(req.body.birth) //Arrumando o birth
+    }
+
+    data.instructors[index] = instructor
+    fs.writeFile("data.json",JSON.stringify(data, null, 2), function(err) {
+        if(err) {
+            return res.send("Write error!")
+        }
+        return res.redirect(`/instructors/${id}`)
+    })
+}
+
+//Delete
+exports.delete = function(req,res) {
+    const { id } = req.body
+
+    //So entra dentro do filteredInstructors o que a funcao retornar como true e tira o que retorna false
+    const filteredInstructors = data.instructors.filter(function(instructor){
+        return instructor.id != id
+    })
+
+    data.instructors = filteredInstructors
+
+    fs.writeFile("data.json",JSON.stringify(data, null, 2), function(err) {
+        if(err) return res.send("Write error!")
+
+        return res.redirect("/instructors")
+    })
+}
