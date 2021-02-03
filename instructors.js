@@ -2,6 +2,11 @@ const fs = require('fs')
 const data = require ('./data.json')
 const { age, date } = require('./utils')
 
+//Index
+exports.index = function(req,res) {
+    return res.render("instructors/index", { instructors: data.instructors })
+}
+
 //show
 exports.show = function(req,res) {
     // req.params é usado paga pegar o id diretamete da url
@@ -103,7 +108,8 @@ exports.put = function(req,res) {
     const instructor = {
         ...foundInstructor, //Trazendo do banco de dados
         ...req.body, //Trazendo do front
-        birth: Date.parse(req.body.birth) //Arrumando o birth
+        birth: Date.parse(req.body.birth), //Arrumando o birth
+        id: Number(req.body.id)
     }
 
     data.instructors[index] = instructor

@@ -11,11 +11,11 @@
     },
     {
       "id": 2,
-      "name": "Teste B",
-      "avatar_url": "http://bla.com",
+      "name": "Mando",
+      "avatar_url": "https://www.arrobanerd.com.br/wp-content/uploads/2020/09/the-mandalorian-temporada-2-trailer-660x372.jpg",
       "birth": 725846400000,
-      "gender": "F",
-      "services": "Teste1, Teste2",
+      "gender": "M",
+      "services": "This is the way, Bounty Hunter",
       "created_at": 1611608191513
     }
   ]
