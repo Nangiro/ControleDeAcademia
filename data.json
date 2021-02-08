@@ -1,10 +1,23 @@
 {
+  "members": [
+    {
+      "avatar_url": "https://www.arrobanerd.com.br/wp-content/uploads/2020/09/the-mandalorian-temporada-2-trailer-660x372.jpg",
+      "name": "First Member",
+      "email": "first@member.com",
+      "birth": 946771200000,
+      "gender": "M",
+      "blood": "AB+",
+      "weight": "100",
+      "height": "177",
+      "id": 1
+    }
+  ],
   "instructors": [
     {
       "id": 1,
       "name": "Baby Yoda",
       "avatar_url": "https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-28-11-38/baby-yoda-ja-tem-nome-oficial-1606563497202.jpg/EG11/resize/1200x-1/baby-yoda-ja-tem-nome-oficial-1606563497202.jpg",
-      "birth": 744681600000,
+      "birth": 776217600000,
       "gender": "M",
       "services": "Force, Light Saber",
       "created_at": 1611600380544
